@@ -58,6 +58,12 @@ img {
   height: auto;
   object-fit: cover;
 }
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #447fdb;
+  color: white;
+}
 
 @media screen and (min-width: 600px) {
   #gallery {
