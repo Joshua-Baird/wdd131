@@ -10,13 +10,14 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Cool Pics</title>
 </head>
 <header>
     <h1>Cool Pics 📷</h1>
-    <nav>
-        <button class="menu-btn">
-            Menu</button>
+    <button class="menu-btn">
+        Menu</button>
+    <nav class="hide">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">People</a></li>
@@ -29,35 +30,41 @@
 
 <body>
     <h2>Current Work</h2>
-    <div id="gallery">
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
+    <section id="gallery">
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+        <figure class="image-container">
+            <img src="coolpic-sm.jpg" alt="cool picture">
+        </figure>
+    </section>
+    <dialog>
+        <div id="dialog-image-container">
+            <img>
+            <button class="close-viewer">X</button>
         </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-        <div class="image-container">
-            <img src="coolpic.jpg" alt="cool picture">
-        </div>
-    </div>
+    </dialog>
 </body>
 <footer>
     <p>Copyright 2026 Joshua Baird</p>
