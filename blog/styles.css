@@ -57,6 +57,9 @@ main {
 .description {
   margin: 0;
 }
+.italic {
+  font-style: italic;
+}
 p {
   justify-self: right;
   margin-top: 0;
