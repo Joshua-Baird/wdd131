@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Event Form</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js" defer></script>
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="normalize" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Place favicon.ico in the root directory -->
+
+</head>
+
+<body>
+  <form id="eventForm">
+    <h1 class="full">Event Ticket </h1>
+    <div class="field">
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" required />
+    </div>
+    <div class="field">
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" required />
+    </div>
+    <div class="field full">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+    <div class="field">
+      <label for="type">Type</label>
+      <select id="type" name="type" required aria-controls="studentIdField eventCodeField">
+        <option value="">Choose one</option>
+        <option value="student">Student</option>
+        <option value="guest">Guest</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date" required />
+    </div>
+    <div class="field full" id="studentIdField" hidden>
+      <label for="studentId">Student I#</label>
+      <input id="studentId" name="studentId" type="number" required />
+    </div>
+    <div class="field full" id="eventCodeField" hidden>
+      <label for="eventCode">Event Code</label>
+      <input id="eventCode" name="eventCode" type="text" required />
+    </div>
+    <button type="submit" class="full" id="createTicket">Create Ticket</button>
+    <div id="output"></div>
+  </form>
+</body>
+
+</html>

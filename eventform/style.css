@@ -1,0 +1,43 @@
+body {
+    background-color: #BFCDD9;
+
+}
+#eventForm {
+    background-color: #ffffff;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.full {
+    grid-column: 1 / 3;
+}
+input, select, button {
+    padding: 0.5rem;
+    font: inherit;
+}
+#eventCodeField[hidden] {
+    display: none;
+}
+#studentIdField[hidden] {
+    display: none;
+}
+button {
+    background-color: #BFCDD9;
+    border: black solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+button:hover {
+    background-color: #A9B8C7;
+}
+
