@@ -103,7 +103,7 @@ function search() {
 
   hikeContainer.innerHTML = "";
   sortedHikes.forEach(function (hike) {
-    renderHike(hike)
+
   })
 
 }
